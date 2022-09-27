@@ -28,3 +28,39 @@
 [submodule "pack/plugins/start/LeaderF"]
 	path = pack/plugins/start/LeaderF
 	url = https://github.com/Yggdroot/LeaderF
+[submodule "pack/plugins/start/targets.vim"]
+	path = pack/plugins/start/targets.vim
+	url = https://github.com/wellle/targets.vim
+[submodule "pack/plugins/start/vim-commentary"]
+	path = pack/plugins/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "pack/plugins/start/vim-gruvbox8"]
+	path = pack/plugins/start/vim-gruvbox8
+	url = https://github.com/lifepillar/vim-gruvbox8
+[submodule "pack/plugins/start/vim-highlighturl"]
+	path = pack/plugins/start/vim-highlighturl
+	url = https://github.com/itchyny/vim-highlighturl
+[submodule "pack/plugins/start/vim-indent-object"]
+	path = pack/plugins/start/vim-indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object
+[submodule "pack/plugins/start/vim-python-pep8-indent"]
+	path = pack/plugins/start/vim-python-pep8-indent
+	url = https://github.com/Vimjas/vim-python-pep8-indent
+[submodule "pack/plugins/start/vim-pythonsense"]
+	path = pack/plugins/start/vim-pythonsense
+	url = https://github.com/jeetsukumaran/vim-pythonsense
+[submodule "pack/plugins/start/vim-sandwich"]
+	path = pack/plugins/start/vim-sandwich
+	url = https://github.com/machakann/vim-sandwich
+[submodule "pack/plugins/start/vim-swap"]
+	path = pack/plugins/start/vim-swap
+	url = https://github.com/machakann/vim-swap
+[submodule "pack/plugins/start/vim-which-key"]
+	path = pack/plugins/start/vim-which-key
+	url = https://github.com/liuchengxu/vim-which-key
+[submodule "pack/plugins/start/black"]
+	path = pack/plugins/start/black
+	url = https://github.com/psf/black
+[submodule "pack/plugins/start/vim-clang-format"]
+	path = pack/plugins/start/vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format
