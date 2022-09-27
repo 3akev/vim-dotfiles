@@ -113,4 +113,4 @@ let g:clang_library_path='/usr/lib/libclang.so'
 
 
 "" Custom keymaps
-nnoremap <leader>f :ALECodeAction<cr>
+nnoremap <leader>F :ALECodeAction<cr>
