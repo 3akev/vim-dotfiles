@@ -1,0 +1,33 @@
+[submodule "pack/plugins/start/nerdtree"]
+	path = pack/plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "pack/plugins/start/jedi-vim"]
+	path = pack/plugins/start/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim
+[submodule "pack/plugins/start/ale"]
+	path = pack/plugins/start/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "pack/plugins/start/vim-highlightedyank"]
+	path = pack/plugins/start/vim-highlightedyank
+	url = https://github.com/machakann/vim-highlightedyank
+[submodule "pack/plugins/start/vim-clangd"]
+	path = pack/plugins/start/vim-clangd
+	url = https://github.com/abhishekgahlot/vim-clangd
+[submodule "pack/plugins/start/clang_complete"]
+	path = pack/plugins/start/clang_complete
+	url = https://github.com/xavierd/clang_complete
+[submodule "pack/plugins/start/better-escape.vim"]
+	path = pack/plugins/start/better-escape.vim
+	url = https://github.com/nvim-zh/better-escape.vim
+[submodule "pack/plugins/start/vim-yoink"]
+	path = pack/plugins/start/vim-yoink
+	url = https://github.com/svermeulen/vim-yoink
+[submodule "pack/plugins/start/delimitMate"]
+	path = pack/plugins/start/delimitMate
+	url = https://github.com/Raimondi/delimitMate
+[submodule "pack/plugins/start/asyncrun.vim"]
+	path = pack/plugins/start/asyncrun.vim
+	url = https://github.com/skywind3000/asyncrun.vim
+[submodule "pack/plugins/start/asynctasks.vim"]
+	path = pack/plugins/start/asynctasks.vim
+	url = https://github.com/skywind3000/asynctasks.vim
