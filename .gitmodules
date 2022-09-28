@@ -64,3 +64,6 @@
 [submodule "pack/plugins/start/vim-clang-format"]
 	path = pack/plugins/start/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format
+[submodule "pack/plugins/start/vim-buftabline"]
+	path = pack/plugins/start/vim-buftabline
+	url = https://github.com/ap/vim-buftabline
