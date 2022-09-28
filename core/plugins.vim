@@ -26,3 +26,7 @@ let g:asyncrun_open = 6
 
 " vim-autoformat
 let g:python3_host_prog='/usr/bin/python3'
+
+""""""""""""""""""""""""""""""vim-auto-save settings""""""""""""""""""""""""""""""
+let g:auto_save = 1  " enable AutoSave on Vim startup
+

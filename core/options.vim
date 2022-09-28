@@ -20,7 +20,6 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
 set fileformat=unix " save files with unix line endings
-set scrolloff=10 " Do not let cursor scroll below or above N number of lines when scrolling.
 
 " Show partial command you type in the last line of the screen.
 set showcmd
@@ -85,3 +84,39 @@ set number relativenumber  " Show line number and relative line number
 
 " Ignore case in general, but become case-sensitive when uppercase is present
 set ignorecase smartcase
+
+" File and script encoding settings for vim
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+
+" Break line at predefined characters
+set linebreak
+" Character to show before the lines that have been soft-wrapped
+set showbreak=↪
+
+" List all matches and complete till longest common string
+set wildmode=list:longest
+
+" Minimum lines to keep above and below cursor when scrolling
+set scrolloff=3
+
+" Use mouse to select and resize windows, etc.
+"set mouse=nic  " Enable mouse in several mode
+"set mousemodel=popup  " Set the behaviour of mouse
+
+" Disable showing current mode on command line since statusline plugins can show it.
+set noshowmode
+
+set fileformats=unix,dos  " Fileformats to use for new files
+
+" Ask for confirmation when handling unsaved or read-only files
+set confirm
+
+set visualbell noerrorbells t_vb= " Do not use visual and errorbells
+set history=500  " The number of command and search history to keep
+
+" Use list mode and customized listchars
+set list listchars=tab:▸\ ,extends:❯,precedes:❮,nbsp:␣
+
+" Auto-write the file based on some condition
+set autowrite
