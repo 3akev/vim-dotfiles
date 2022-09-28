@@ -120,3 +120,41 @@ set list listchars=tab:▸\ ,extends:❯,precedes:❮,nbsp:␣
 
 " Auto-write the file based on some condition
 set autowrite
+
+" Persistent undo even after you close a file and re-open it
+"set undofile
+
+" Do not show "match xx of xx" and other messages during auto-completion
+set shortmess+=c
+
+" Disable showing intro message (:intro)
+set shortmess+=I
+
+" Completion behaviour
+" set completeopt+=noinsert  " Auto select the first completion entry
+set completeopt+=menuone  " Show menu even if there is only one item
+set completeopt-=preview  " Disable the preview window
+
+set pumheight=10  " Maximum number of items to show in popup menu
+
+" Insert mode key word completion setting
+"set complete+=kspell complete-=w complete-=b complete-=u complete-=t
+
+" Align indent to next multiple value of shiftwidth. For its meaning,
+" see http://vim.1045645.n5.nabble.com/shiftround-option-td5712100.html
+set shiftround
+
+set virtualedit=block  " Virtual edit is useful for visual block edit
+
+" Tilde (~) is an operator, thus must be followed by motions like `e` or `w`.
+set tildeop
+
+set synmaxcol=200  " Text after this column number is not highlighted
+set nostartofline
+
+" External program to use for grep command
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+  set grepformat=%f:%l:%c:%m
+endif
+
