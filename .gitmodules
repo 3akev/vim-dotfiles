@@ -73,3 +73,6 @@
 [submodule "pack/plugins/start/vim-auto-save"]
 	path = pack/plugins/start/vim-auto-save
 	url = https://github.com/vim-scripts/vim-auto-save
+[submodule "pack/plugins/start/vim-togglecursor"]
+	path = pack/plugins/start/vim-togglecursor
+	url = https://github.com/jszakmeister/vim-togglecursor
