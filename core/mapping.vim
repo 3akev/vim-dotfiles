@@ -109,13 +109,6 @@ tnoremap <leader><Esc> <C-\\><C-n>
 nmap <F11> :set spell!<cr>
 imap <F11> <c-o>:set spell!<cr>
 
-" Change text without putting it into the vim register,
-" see https://stackoverflow.com/q/54255/6064933
-nmap c _c
-nmap C _C
-nmap cc _cc
-xmap c _c
-
 " Remove trailing whitespace characters
 nmap <leader><space> :StripTrailingWhitespace<cr>
 
@@ -136,10 +129,6 @@ nmap <A-j> :call utils#SwitchLine(line("."), "down")<cr>
 xmap <A-k> :call utils#MoveSelection("up")<cr>
 xmap <A-j> :call utils#MoveSelection("down")<cr>
 
-" Replace visual selection with text in register, but not contaminate the register,
-" see also https://stackoverflow.com/q/10723700/6064933.
-xmap p _c<Esc>p
-
 " Go to a certain buffer
 nmap gb :bn<cr>
 nmap gB :bp<cr>
@@ -158,9 +147,6 @@ nmap <Down> <C-W>j
 
 " insert semicolon in the end
 imap <A-;> <Esc>miA;<Esc>`ii
-
-" Keep cursor position after yanking
-nmap y myy
 
 " Go to the beginning and end of current line in insert mode quickly
 imap <C-A> <HOME>
