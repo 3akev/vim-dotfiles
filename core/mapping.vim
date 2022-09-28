@@ -1,5 +1,17 @@
 let mapleader=','
 
+
+" Save key strokes (now we do not need to press shift to enter command mode).
+nmap ; :
+xmap ; :
+
+" Turn the word under cursor to upper case
+imap <c-u> <Esc>viwUea
+
+" Turn the current word into title case
+imap <c-t> <Esc>b~lea
+
+
 " yank to system clipboard
 map <leader>y "*y
 
