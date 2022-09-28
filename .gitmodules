@@ -67,3 +67,6 @@
 [submodule "pack/plugins/start/vim-autoformat"]
 	path = pack/plugins/start/vim-autoformat
 	url = https://github.com/vim-autoformat/vim-autoformat
+[submodule "pack/plugins/start/vim-airline"]
+	path = pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
