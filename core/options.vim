@@ -1,44 +1,14 @@
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 
-" Enable plugins and load plugin for the detected file type.
-filetype plugin on
-
-" Load an indent file for the detected file type.
-filetype indent on
+filetype plugin indent on
 
 syntax enable
 set encoding=utf-8
 
-set nowrap                      " don't wrap lines
-set backspace=indent,eol,start  " backspace through everything in insert mode
-
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
-set ignorecase                  " searches are case insensitive...
-set smartcase                   " ... unless they contain at least one capital letter
-
-set fileformat=unix " save files with unix line endings
-
-" Show partial command you type in the last line of the screen.
-set showcmd
-" Show the mode you are on the last line.
-set showmode
-" Show matching words during a search.
-set showmatch
-
-" Set the commands to save in history default number is 20.
-set history=1000
-
-" Add numbers to each line on the left-hand side.
-set number
-
-" Time out on key codes but not mappings.
-" Basically this makes terminal Vim work sanely.
-set notimeout
-set ttimeout
-set ttimeoutlen=100
 
 " Split window below/right when creating horizontal/vertical windows
 set splitbelow splitright
@@ -163,3 +133,17 @@ endif
 " colors, see https://github.com/termstandard/colors and https://gist.github.com/XVilka/8346728.
 set termguicolors
 
+" Remove certain character from file name pattern matching
+set isfname-==
+set isfname-=,
+
+" diff options
+set diffopt=
+set diffopt+=vertical  " show diff in vertical position
+set diffopt+=filler  " show filler for deleted lines
+set diffopt+=closeoff  " turn off diff when one file window is closed
+set diffopt+=context:3  " context for diff
+set diffopt+=internal,indent-heuristic,algorithm:histogram
+
+set nowrap  " do no wrap
+set noruler
