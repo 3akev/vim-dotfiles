@@ -11,7 +11,6 @@ imap <c-u> <Esc>viwUea
 " Turn the current word into title case
 imap <c-t> <Esc>b~lea
 
-
 " yank to system clipboard
 map <leader>y "*y
 
@@ -42,6 +41,6 @@ inoremap <s-tab> <c-p>
 nnoremap <leader><leader> <c-^>
 nnoremap <leader>D :tabclose<cr>
 
-nnoremap <leader>F :ALEFix<cr>
+" nnoremap <leader>F :ALEFix<cr>
 
 nnoremap <space>f :Autoformat<CR>
