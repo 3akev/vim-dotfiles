@@ -22,9 +22,6 @@
 [submodule "pack/plugins/start/asyncrun.vim"]
 	path = pack/plugins/start/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim
-[submodule "pack/plugins/start/asynctasks.vim"]
-	path = pack/plugins/start/asynctasks.vim
-	url = https://github.com/skywind3000/asynctasks.vim
 [submodule "pack/plugins/start/LeaderF"]
 	path = pack/plugins/start/LeaderF
 	url = https://github.com/Yggdroot/LeaderF
