@@ -7,7 +7,7 @@ syntax enable
 set encoding=utf-8
 
 "" Searching
-" set hlsearch                    " highlight matches
+set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 
 " Split window below/right when creating horizontal/vertical windows

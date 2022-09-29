@@ -105,3 +105,7 @@ let g:Lf_CommandMap = {'<C-J>': ['<C-N>'], '<C-K>': ['<C-P>']}
 """""""""""""""""""""""""""""" vim-togglecursor """""""""""""""""""""""""""""
 let g:togglecursor_default = 'block'
 
+
+"""""""""""""""""""""""""""""" completor.vim """""""""""""""""""""""""""""
+let g:completor_python_binary = '/usr/bin/python3'
+let g:completor_clang_binary = '/usr/bin/clang'
