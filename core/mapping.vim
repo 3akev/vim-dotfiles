@@ -1,17 +1,5 @@
 let mapleader=','
 
-" <Tab> indents if at the beginning of a line; otherwise does completion
-" function! InsertTabWrapper()
-"   let col = col('.') - 1
-"   if !col || getline('.')[col - 1] !~ '\k'
-"     return "\<tab>"
-"   else
-"     return "\<c-n>"
-"   endif
-" endfunction
-" inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-" inoremap <s-tab> <c-p>
-
 " Use TAB to complete when typing words, else inserts TABs as usual.  Uses
 " dictionary, source files, and completor to find matching words to complete.
 
@@ -37,10 +25,23 @@ endfunction
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
+function! g:UltiSnips_Complete()
+  call UltiSnips#ExpandSnippet()
+  if g:ulti_expand_res == 0
+    if pumvisible()
+      return "\<C-Y>"
+    else
+      return "\<CR>"
+    endif
+  endif
+
+  return ""
+endfunction
+
 " Use tab to trigger auto completion.  Default suggests completions as you type.
-let g:completor_auto_trigger = 0
+let g:completor_auto_trigger = 1
 inoremap <expr> <Tab> Tab_Or_Complete()
-inoremap <expr> <cr> pumvisible() ? '<c-y>' : '<cr>'
+inoremap <expr> <cr> pumvisible() ? '<C-R>=UltiSnips_Complete()<cr>' : '<cr>'
 
 
 " fix for mapping alt key

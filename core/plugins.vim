@@ -109,3 +109,15 @@ let g:togglecursor_default = 'block'
 """""""""""""""""""""""""""""" completor.vim """""""""""""""""""""""""""""
 let g:completor_python_binary = '/usr/bin/python3'
 let g:completor_clang_binary = '/usr/bin/clang'
+
+"""""""""""""""""""""""""UltiSnips settings"""""""""""""""""""
+" Trigger configuration. Do not use <tab> if you use YouCompleteMe
+let g:UltiSnipsExpandTrigger='<C-n>'
+
+" Do not look for SnipMate snippets
+let g:UltiSnipsEnableSnipMate = 0
+
+" Shortcut to jump forward and backward in tabstop positions
+let g:UltiSnipsJumpForwardTrigger='<c-n>'
+let g:UltiSnipsJumpBackwardTrigger='<c-k>'
+
